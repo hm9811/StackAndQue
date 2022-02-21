@@ -24,5 +24,19 @@ public class App {
             System.out.print(" ");
         }
         System.out.println("");
+
+        Stacks stack = new Stacks(5);
+        stack.push(4);
+        stack.push("hi");
+        stack.push(2);
+        stack.push(1);
+        stack.push("bye");
+
+        System.out.println("Peek item is " + stack.peek());
+
+        stack.pop();
+        System.out.println("Peek item after pop once " + stack.peek());
+        stack.pop();
+        System.out.println("Peek item after pop twice " + stack.peek());
     }
 }
